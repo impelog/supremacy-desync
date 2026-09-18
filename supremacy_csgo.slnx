@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="supremacy_csgo.vcxproj" Id="47e7a7a2-1cbb-4b60-93c0-dba2e504a154" />
+</Solution>

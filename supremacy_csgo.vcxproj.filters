@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{6d962071-61cf-4a4b-871d-f8ec008dbec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features">
+      <UniqueIdentifier>{9a101f35-9f5b-4ecb-99d9-43cceb6a98ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk">
+      <UniqueIdentifier>{ad306646-99cf-4cb6-ab8c-0f2c002220f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="menu">
+      <UniqueIdentifier>{898e3b52-78a3-4b68-b715-bb8006e8b625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{8fca8c6f-cfbc-40d6-be85-b152be3ef7bb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\client.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\clientdll.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\clientmode.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\hooks.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="features\aimbot.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\animations.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\bonesetup.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\chams.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\events.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\grenades.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\hvh.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\knifebot.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\lagcomp.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\lagrecord.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\movement.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\netdata.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\penetration.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\pred.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\prediction.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\resolver.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\shots.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\skins.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="features\visuals.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\basehandle.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\clientclass.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\csgo.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\cvar.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\datamap.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engineclient.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\entity.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\entlist.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\entoffsets.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\gameevents.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\gamerules.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\globalvars.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\glow.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\hud.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\input.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\interfaces.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\localize.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\matchframework.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\memalloc.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\netvars.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\networkstringtable.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\sdk.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\sound.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\studio.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\studiorender.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\surface.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\trace.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\utlvector.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\base64.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\button.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\callbacks.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\checkbox.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\colorpicker.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\config.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\dropdown.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\edit.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\element.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\form.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\gui.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\json.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\keybind.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\menu.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\multidropdown.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\slider.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\tab.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="util\address.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\angle.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\beams.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\color.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\exceptions.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\game.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\hash.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\math.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\matrix.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\modules.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\notify.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\nt.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\pattern.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\pe.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\render.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\stack.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\syscall.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\tinyformat.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\unique_vector.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\util.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\vector2.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\vector3.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\vmt.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\winapir.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\x86.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\xorstr.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\client.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\clientdll.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\clientmode.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\clientstate.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\engine.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\entry.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\hooks.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\netchannel.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="features\aimbot.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\animations.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\bonesetup.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\chams.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\events.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\firebullets.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\grenades.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\hvh.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\knifebot.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\lagcomp.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\movement.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\netdata.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\penetration.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\pred.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\prediction.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\resolver.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\shots.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\skins.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="features\visuals.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\csgo.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\cvar.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\matchframework.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\materialsystem.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\modelrender.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\panel.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\player.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\playsound.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\renderview.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\shadowmgr.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\surface.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\viewrender.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\button.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\callbacks.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\checkbox.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\colorpicker.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\config.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\dropdown.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\edit.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\form.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\gui.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\keybind.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\multidropdown.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\slider.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="util\exceptions.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\math.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\render.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

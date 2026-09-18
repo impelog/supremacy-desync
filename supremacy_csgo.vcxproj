@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{47E7A7A2-1CBB-4B60-93C0-DBA2E504A154}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>supremacy_csgo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)output\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)output\$(Configuration)\bin\</IntDir>
+    <IncludePath>$(SolutionDir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)output\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)output\$(Configuration)\bin\</IntDir>
+    <IncludePath>$(SolutionDir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="core\client.h" />
+    <ClInclude Include="core\clientdll.h" />
+    <ClInclude Include="core\clientmode.h" />
+    <ClInclude Include="core\hooks.h" />
+    <ClInclude Include="features\aimbot.h" />
+    <ClInclude Include="features\animations.h" />
+    <ClInclude Include="features\bonesetup.h" />
+    <ClInclude Include="features\chams.h" />
+    <ClInclude Include="detours.h" />
+    <ClInclude Include="sdk\movemsg.h" />
+    <ClInclude Include="features\exploits.h" />
+    <ClInclude Include="features\events.h" />
+    <ClInclude Include="features\grenades.h" />
+    <ClInclude Include="features\hvh.h" />
+    <ClInclude Include="features\knifebot.h" />
+    <ClInclude Include="features\lagcomp.h" />
+    <ClInclude Include="features\lagrecord.h" />
+    <ClInclude Include="features\movement.h" />
+    <ClInclude Include="features\netdata.h" />
+    <ClInclude Include="features\penetration.h" />
+    <ClInclude Include="features\pred.h" />
+    <ClInclude Include="features\prediction.h" />
+    <ClInclude Include="features\resolver.h" />
+    <ClInclude Include="features\shots.h" />
+    <ClInclude Include="features\skins.h" />
+    <ClInclude Include="features\visuals.h" />
+    <ClInclude Include="sdk\basehandle.h" />
+    <ClInclude Include="sdk\clientclass.h" />
+    <ClInclude Include="sdk\csgo.h" />
+    <ClInclude Include="sdk\cvar.h" />
+    <ClInclude Include="sdk\datamap.h" />
+    <ClInclude Include="sdk\engineclient.h" />
+    <ClInclude Include="sdk\entity.h" />
+    <ClInclude Include="sdk\entlist.h" />
+    <ClInclude Include="sdk\entoffsets.h" />
+    <ClInclude Include="sdk\gameevents.h" />
+    <ClInclude Include="sdk\gamerules.h" />
+    <ClInclude Include="sdk\globalvars.h" />
+    <ClInclude Include="sdk\glow.h" />
+    <ClInclude Include="sdk\hud.h" />
+    <ClInclude Include="sdk\input.h" />
+    <ClInclude Include="sdk\interfaces.h" />
+    <ClInclude Include="sdk\localize.h" />
+    <ClInclude Include="sdk\matchframework.h" />
+    <ClInclude Include="sdk\memalloc.h" />
+    <ClInclude Include="sdk\netvars.h" />
+    <ClInclude Include="sdk\networkstringtable.h" />
+    <ClInclude Include="sdk\sdk.h" />
+    <ClInclude Include="sdk\sound.h" />
+    <ClInclude Include="sdk\studio.h" />
+    <ClInclude Include="sdk\studiorender.h" />
+    <ClInclude Include="sdk\surface.h" />
+    <ClInclude Include="sdk\trace.h" />
+    <ClInclude Include="sdk\utlvector.h" />
+    <ClInclude Include="menu\base64.h" />
+    <ClInclude Include="menu\button.h" />
+    <ClInclude Include="menu\callbacks.h" />
+    <ClInclude Include="menu\checkbox.h" />
+    <ClInclude Include="menu\colorpicker.h" />
+    <ClInclude Include="menu\config.h" />
+    <ClInclude Include="menu\dropdown.h" />
+    <ClInclude Include="menu\edit.h" />
+    <ClInclude Include="menu\element.h" />
+    <ClInclude Include="menu\form.h" />
+    <ClInclude Include="menu\gui.h" />
+    <ClInclude Include="menu\json.h" />
+    <ClInclude Include="menu\keybind.h" />
+    <ClInclude Include="menu\menu.h" />
+    <ClInclude Include="menu\multidropdown.h" />
+    <ClInclude Include="menu\slider.h" />
+    <ClInclude Include="menu\tab.h" />
+    <ClInclude Include="util\address.h" />
+    <ClInclude Include="util\angle.h" />
+    <ClInclude Include="util\beams.h" />
+    <ClInclude Include="util\color.h" />
+    <ClInclude Include="util\exceptions.h" />
+    <ClInclude Include="util\game.h" />
+    <ClInclude Include="util\hash.h" />
+    <ClInclude Include="util\math.h" />
+    <ClInclude Include="util\matrix.h" />
+    <ClInclude Include="util\modules.h" />
+    <ClInclude Include="util\notify.h" />
+    <ClInclude Include="util\nt.h" />
+    <ClInclude Include="util\pattern.h" />
+    <ClInclude Include="util\pe.h" />
+    <ClInclude Include="util\render.h" />
+    <ClInclude Include="util\stack.h" />
+    <ClInclude Include="util\syscall.h" />
+    <ClInclude Include="util\tinyformat.h" />
+    <ClInclude Include="util\unique_vector.h" />
+    <ClInclude Include="util\util.h" />
+    <ClInclude Include="util\vector2.h" />
+    <ClInclude Include="util\vector3.h" />
+    <ClInclude Include="util\vmt.h" />
+    <ClInclude Include="util\winapir.h" />
+    <ClInclude Include="util\x86.h" />
+    <ClInclude Include="util\xorstr.h" />
+    <ClInclude Include="includes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\client.cpp" />
+    <ClCompile Include="core\clientdll.cpp" />
+    <ClCompile Include="core\clientmode.cpp" />
+    <ClCompile Include="core\clientstate.cpp" />
+    <ClCompile Include="core\engine.cpp" />
+    <ClCompile Include="core\entry.cpp" />
+    <ClCompile Include="core\hooks.cpp" />
+    <ClCompile Include="core\netchannel.cpp" />
+    <ClCompile Include="features\aimbot.cpp" />
+    <ClCompile Include="features\animations.cpp" />
+    <ClCompile Include="features\bonesetup.cpp" />
+    <ClCompile Include="features\chams.cpp" />
+    <ClCompile Include="features\events.cpp" />
+    <ClCompile Include="features\exploits.cpp" />
+    <ClCompile Include="features\firebullets.cpp" />
+    <ClCompile Include="features\grenades.cpp" />
+    <ClCompile Include="features\hvh.cpp" />
+    <ClCompile Include="features\knifebot.cpp" />
+    <ClCompile Include="features\lagcomp.cpp" />
+    <ClCompile Include="features\movement.cpp" />
+    <ClCompile Include="features\netdata.cpp" />
+    <ClCompile Include="features\penetration.cpp" />
+    <ClCompile Include="features\pred.cpp" />
+    <ClCompile Include="features\prediction.cpp" />
+    <ClCompile Include="features\resolver.cpp" />
+    <ClCompile Include="features\shots.cpp" />
+    <ClCompile Include="features\skins.cpp" />
+    <ClCompile Include="features\visuals.cpp" />
+    <ClCompile Include="sdk\csgo.cpp" />
+    <ClCompile Include="sdk\cvar.cpp" />
+    <ClCompile Include="sdk\matchframework.cpp" />
+    <ClCompile Include="sdk\materialsystem.cpp" />
+    <ClCompile Include="sdk\modelrender.cpp" />
+    <ClCompile Include="sdk\panel.cpp" />
+    <ClCompile Include="sdk\player.cpp" />
+    <ClCompile Include="sdk\playsound.cpp" />
+    <ClCompile Include="sdk\renderview.cpp" />
+    <ClCompile Include="sdk\shadowmgr.cpp" />
+    <ClCompile Include="sdk\surface.cpp" />
+    <ClCompile Include="sdk\viewrender.cpp" />
+    <ClCompile Include="menu\button.cpp" />
+    <ClCompile Include="menu\callbacks.cpp" />
+    <ClCompile Include="menu\checkbox.cpp" />
+    <ClCompile Include="menu\colorpicker.cpp" />
+    <ClCompile Include="menu\config.cpp" />
+    <ClCompile Include="menu\dropdown.cpp" />
+    <ClCompile Include="menu\edit.cpp" />
+    <ClCompile Include="menu\form.cpp" />
+    <ClCompile Include="menu\gui.cpp" />
+    <ClCompile Include="menu\keybind.cpp" />
+    <ClCompile Include="menu\multidropdown.cpp" />
+    <ClCompile Include="menu\slider.cpp" />
+    <ClCompile Include="util\exceptions.cpp" />
+    <ClCompile Include="util\math.cpp" />
+    <ClCompile Include="util\render.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
